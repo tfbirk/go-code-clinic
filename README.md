@@ -1,2 +1,13 @@
 # go-code-clinic
 Learning Go (golang)
+
+## Hello World
+
+Cd in the the src folder and build (`go build`) to create a `src.exe` executable. Run from the command prompt.
+
+## Resources
+
+- official website: https://golang.org/
+- https://godoc.org/
+- A Tour Of Go: https://tour.golang.org/welcome/1
+- Introduction to Go for Javascript: https://hackernoon.com/introduction-to-go-for-javascript-developer-3e783b409e52
