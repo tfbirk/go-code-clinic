@@ -3,7 +3,7 @@ Learning Go (golang)
 
 ## Hello World
 
-Cd in the the src folder and build (`go build`) to create a `src.exe` executable. Run from the command prompt.
+Cd into the the src/hello folder and build (`go build`) to create a `hello.exe` executable. Run from the command prompt.
 
 ## Resources
 
