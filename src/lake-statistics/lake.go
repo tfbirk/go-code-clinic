@@ -20,6 +20,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer f.Close()
 	// fmt.Println(f) // DEBUG
 
 	rdr := csv.NewReader(bufio.NewReader(f))
