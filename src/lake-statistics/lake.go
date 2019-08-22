@@ -32,7 +32,9 @@ func main() {
 	fmt.Println("Total Records: ", length)  // DEBUG
 
 	// Now use http GET, instead of the file
-	// res, err := http.Get("https://lpo.dt.navy.mil/data/DM/Environmental_Data_Deep_Moor_2019.txt")
+	// must set http_proxy environment variable to retrieve
+	// res, err := http.Get("https://lpo.dt.navy.mil/data/DM/Environmental_Data_Deep_Moor_2015.txt")
+	// fmt.Println("res.Body: ", res.Body)
 	// if err != nil {
 	// 	log.Fatal(err)
 	// }
