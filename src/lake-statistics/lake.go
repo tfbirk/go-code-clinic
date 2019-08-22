@@ -47,7 +47,7 @@ func main() {
 	// }
 	// fmt.Println("Total Records: ", len(rows)-1)  // DEBUG
 
-	// get all wind speeds (column 7 (not sure why?))
+	// get all wind speeds (column 7 (because date-time is considered one column)))
 	windspeeds := make([]float64, length)
 	airtemps := make([]float64, length)
 	baro := make([]float64, length)
