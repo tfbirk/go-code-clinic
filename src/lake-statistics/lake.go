@@ -4,7 +4,6 @@
 package main
 
 import (
-	"bufio"
 	"encoding/csv"
 	"fmt"
 	"log"
@@ -23,7 +22,7 @@ func main() {
 	defer f.Close()
 	// fmt.Println(f) // DEBUG
 
-	rdr := csv.NewReader(bufio.NewReader(f))
+	rdr := csv.NewReader(f)
 	rdr.Comma = '\t'
 	rdr.TrimLeadingSpace = true
 	rows, err := rdr.ReadAll()
