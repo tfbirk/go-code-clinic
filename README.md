@@ -5,6 +5,8 @@ Learning Go (golang)
 
 Cd into the the src/hello folder and build (`go build`) to create a `hello.exe` executable. Run from the command prompt.
 
+Alternatively, run from source: `go run hello.go`.
+
 ## Resources
 
 - official website: https://golang.org/
