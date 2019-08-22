@@ -7,7 +7,6 @@ import (
 	"encoding/csv"
 	"fmt"
 	"log"
-	//"math"
 	//"net/http"
 	"os"
 	"strconv"
@@ -37,15 +36,15 @@ func main() {
 	// if err != nil {
 	// 	log.Fatal(err)
 	// }
-	// rdr := csv.NewReader(res.Body)
-	// rdr.Comma = '\t'
-	// rdr.TrimLeadingSpace = true
+	// r := csv.NewReader(res.Body)
+	// r.Comma = '\t'
+	// r.TrimLeadingSpace = true
 	// defer res.Body.Close()
-	// rows, err := rdr.ReadAll()
+	// rws, err := r.ReadAll()
 	// if err != nil {
 	// 	panic(err)
 	// }
-	// fmt.Println("Total Records: ", len(rows)-1)  // DEBUG
+	// fmt.Println("Total Records (http): ", len(rws)-1)  // DEBUG
 
 	// get all wind speeds (column 7 (because date-time is considered one column)))
 	windspeeds := make([]float64, length)
