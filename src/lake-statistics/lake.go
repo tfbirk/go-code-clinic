@@ -1,5 +1,5 @@
 // Problem 1: Statistical Analysis
-// Lake Pend Oreille weather data: http://lpo.dt.navy.mil
+// Lake Pend Oreille weather data: https://lpo.dt.navy.mil
 
 package main
 
@@ -28,4 +28,19 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println("Total Records: ", len(rows)-1)  // DEBUG
+
+	// Now use http GET, instead of the file
+	// res, err := http.Get("https://lpo.dt.navy.mil/data/DM/Environmental_Data_Deep_Moor_2019.txt")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// rdr := csv.NewReader(res.Body)
+	// rdr.Comma = '\t'
+	// rdr.TrimLeadingSpace = true
+	// defer res.Body.Close()
+	// rows, err := rdr.ReadAll()
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println("Total Records: ", len(rows)-1)  // DEBUG
 }
